@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Surf Style</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">Surf Style</h1>
+        <div class="containerFilter">
+            <div class="filter" id="filter">
+                <img src="filternew.png" alt="filtro" class="filterImg" id="filterImg">
+                <button class="filterButton" id="todos">Todos</button>
+                <button class="filterButton" id="acessórios">Acessórios</button>
+                <button class="filterButton" id="jaquetas">Jaquetas</button>
+                <button class="filterButton" id="camisetas">Camisetas</button>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <aside>
+            <form class="search">
+                <label for="searchTextHtml" class="hide">Pesquisa de texto</label>
+                <input class="searchText" id="searchText" placeholder="Digite aqui sua pesquisa" />
+                <button class="searchButton" id="searchButton">Pesquisar</button>
+            </form>
+            <section class="cart" id="cartHtml">
+                <div class="headerCart" id="cartHeader">
+                    <header class="headerText">Carrinho de compras</header>
+                </div>
+                <div class="productsCart">
+                </div>
+                <div class="valuesCart" id="values">
+                    <div class="containerValues" id="quantityContainer">
+                        <p class="values">Quantidade:</p>
+                        <p class="numValue" id="quantityHtml"></p>
+                    </div>
+                    <div class="containerValues">
+                        <p class="values">Total:</p>
+                        <p class="numValue" id="totalHtml"></p>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
